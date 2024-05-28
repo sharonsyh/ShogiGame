@@ -27,9 +27,9 @@ constructor(col = null, row = null, type) {
   this.size = this.setSize(type, this.promote);
 }
 
-Properties: col, row, promote, type, direction, size.
+### Properties: col, row, promote, type, direction, size.
 
-setDirection(type, promote)
+**setDirection(type, promote)**
 Determines the movements for each piece (clockwise).
 
 case 2:
@@ -50,7 +50,7 @@ case 3:
   break;
 
 
-setSize(type, promote)
+**setSize(type, promote)**
 Determines how far a piece can move based on type and promotion status.
 
 setSize(type, promote) {
@@ -94,7 +94,7 @@ for (var i = 0; i < piece.direction.length; i++) {
 }
 
 
-Player Class
+### Player Class
 
 constructor(playerStatus) {
   this.playerStatus = playerStatus; // lower or upper // 1 or -1
